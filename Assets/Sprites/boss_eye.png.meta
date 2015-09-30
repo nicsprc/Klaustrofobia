@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: d562766b8505a4b4dbdb8829df428286
+timeCreated: 1436033112
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: boss_eye_0
+    21300002: boss_eye_1
+    21300004: boss_eye_2
+    21300006: boss_eye_3
+    21300008: boss_eye_4
+    21300010: boss_eye_5
+    21300012: boss_eye_6
+    21300014: boss_eye_7
+    21300016: boss_eye_8
+    21300018: boss_eye_9
+    21300020: boss_eye_10
+    21300022: boss_eye_11
+    21300024: boss_eye_12
+    21300026: boss_eye_13
+    21300028: boss_eye_14
+    21300030: boss_eye_15
+    21300032: boss_eye_16
+    21300034: boss_eye_17
+    21300036: boss_eye_18
+    21300038: boss_eye_19
+    21300040: boss_eye_20
+    21300042: boss_eye_21
+    21300044: boss_eye_22
+    21300046: boss_eye_23
+    21300048: boss_eye_24
+    21300050: boss_eye_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: boss_eye_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_3
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_4
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_5
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_6
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_7
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_8
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_9
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_10
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_11
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_12
+      rect:
+        serializedVersion: 2
+        x: 3856
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_13
+      rect:
+        serializedVersion: 2
+        x: 4176
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_14
+      rect:
+        serializedVersion: 2
+        x: 4496
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_15
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_16
+      rect:
+        serializedVersion: 2
+        x: 5136
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_17
+      rect:
+        serializedVersion: 2
+        x: 5456
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_18
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_19
+      rect:
+        serializedVersion: 2
+        x: 6096
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_20
+      rect:
+        serializedVersion: 2
+        x: 6416
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_21
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_22
+      rect:
+        serializedVersion: 2
+        x: 7056
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_23
+      rect:
+        serializedVersion: 2
+        x: 7376
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_24
+      rect:
+        serializedVersion: 2
+        x: 7696
+        y: 10
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss_eye_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8000
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 4c3b20d4042d98e408261ef6b3c29d36
+timeCreated: 1435413019
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: monster_eye_anim1_0
+    21300002: monster_eye_anim1_1
+    21300004: monster_eye_anim1_2
+    21300006: monster_eye_anim1_3
+    21300008: monster_eye_anim1_4
+    21300010: monster_eye_anim1_5
+    21300012: monster_eye_anim1_6
+    21300014: monster_eye_anim1_7
+    21300016: monster_eye_anim1_8
+    21300018: monster_eye_anim1_9
+    21300020: monster_eye_anim1_10
+    21300022: monster_eye_anim1_11
+    21300024: monster_eye_anim1_12
+    21300026: monster_eye_anim1_13
+    21300028: monster_eye_anim1_14
+    21300030: monster_eye_anim1_15
+    21300032: monster_eye_anim1_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: monster_eye_anim1_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 132
+        width: 99
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_1
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_3
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_4
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_5
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_6
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_7
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_8
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_9
+      rect:
+        serializedVersion: 2
+        x: 2986
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_10
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_11
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_12
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 132
+        width: 99
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_13
+      rect:
+        serializedVersion: 2
+        x: 4271
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_14
+      rect:
+        serializedVersion: 2
+        x: 4592
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_15
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monster_eye_anim1_16
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
