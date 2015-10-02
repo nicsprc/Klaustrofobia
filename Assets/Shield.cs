@@ -34,8 +34,6 @@ public class Shield : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print (shieldTimer);
-
 		shieldTimer += Time.deltaTime;
 		if(shieldTimer>shieldMaxTime){
 			GameObject.Destroy(gameObject);

@@ -13,7 +13,11 @@ public class GUIMenu : MonoBehaviour {
 			Application.LoadLevel("Level1");
 		}
 
-		if (GUI.Button (new Rect (2 * Screen.width / 5, (Screen.height / 3) + 50 + 20, Screen.width / 5, 50), "Exit Game")) {
+		if (GUI.Button (new Rect (2 * Screen.width / 5, (Screen.height / 3) + 50 + 20, Screen.width / 5, 50), "Start Tutorial")) {
+			Application.LoadLevel("TutorialLevel");
+		}
+
+		if (GUI.Button (new Rect (2 * Screen.width / 5, (Screen.height / 3) + 100 + 40, Screen.width / 5, 50), "Exit Game")) {
 			Application.Quit();
 		}
 	}

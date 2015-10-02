@@ -160,6 +160,8 @@ public class Player1Skills : MonoBehaviour {
 		}
 
 		if (!isHookOn) {
+			comeHere = false;
+			goAway = false;
 			hookTimer = 0.0f;
 			hookFlyingTime = hookConstant;
 			GameObject.Find("p1/Line").GetComponent<LineRenderer>().SetPosition (0,new Vector3(0,0,0));
