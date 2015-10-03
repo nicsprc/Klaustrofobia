@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour {
 	public float bulletSpeed;
 	private Vector3 shootDir;
 	private PlayerStats playerStats;
+	public AudioClip audioClip;
 
 	// Use this for initialization
 	void Start () {

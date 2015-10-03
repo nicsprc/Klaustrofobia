@@ -91,6 +91,7 @@ public class Player1Skills : MonoBehaviour {
 				canShoot = false;
 				countShootTime = true;
 				//audioSou.PlayOneShot(audioClip);
+				audioSou.PlayOneShot(bullet.GetComponent<Bullet>().audioClip);
 			}
 		}
 
