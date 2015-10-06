@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class FollowAndShoot : MonoBehaviour {
+	
+	public AudioClip audioClip;
+	private AudioSource audioSou;
 
 	private GameObject player;
 	private Vector3 pPos;
@@ -20,6 +23,8 @@ public class FollowAndShoot : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		body = this.GetComponent<Rigidbody2D> ();
+
+		audioSou = GetComponent<AudioSource> ();
 
 		timeMovingRandom = 0.0f;
 		timerShoot = 0.0f;
@@ -84,6 +89,7 @@ public class FollowAndShoot : MonoBehaviour {
 		
 		if (timerShoot > timeToShoot) {
 			Instantiate(projectile,transform.position, transform.rotation);
+			audioSou.PlayOneShot(audioClip);
 			timerShoot = 0f;
 		}
 
