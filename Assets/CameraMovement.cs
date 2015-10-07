@@ -62,7 +62,7 @@ public class CameraMovement : MonoBehaviour {
 		// Zoom
 		if(canZoom){
 			if(Input.GetAxis("Mouse ScrollWheel")<0.0f){
-				if(camZoom<19.9f){
+				if(camZoom<9.9f){
 					camZoom += 0.2f;
 				}
 			}
