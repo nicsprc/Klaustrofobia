@@ -138,14 +138,14 @@ public class Player1Skills : MonoBehaviour {
 		}
 
 
-		if(Input.GetKeyDown(KeyCode.Z)){
+		if(Input.GetKeyDown(KeyCode.W)){
 			if (isHookOn){
 				comeHere = !comeHere;
 				goAway = false;
 			}
 		}
 
-		if(Input.GetKeyDown(KeyCode.X)){
+		if(Input.GetKeyDown(KeyCode.S)){
 			if (isHookOn){
 				goAway = !goAway;
 				comeHere = false;

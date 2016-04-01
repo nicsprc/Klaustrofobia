@@ -81,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129100}
   m_LocalRotation: {x: 0, y: 0.7009093, z: 0, w: 0.7132504}
-  m_LocalPosition: {x: 0, y: 0.02, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 458122}
@@ -93,7 +93,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 458122}
@@ -105,7 +105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.96, y: 273.71, z: 0}
+  m_LocalPosition: {x: 12.1, y: -275.21, z: 0.9}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 477782}
@@ -140,7 +140,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &6110898
 BoxCollider2D:
@@ -214,7 +214,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -236,7 +236,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!95 &9541432
 Animator:
   serializedVersion: 3
@@ -357,8 +357,8 @@ MonoBehaviour:
   isHookOn: 0
   shootCoolDown: 1.5
   shield: {fileID: 111370, guid: 0b371cea6078b874c958dba0c0655709, type: 2}
-  shieldCoolDown: 2
-  hookFlyingTime: 1000
+  shieldCoolDown: 5
+  hookFlyingTime: 2
   offensiveSkillPointCount: 50
   offensiveSkillPointSpent: 0
   utilitySkillPointCount: 50
@@ -373,7 +373,7 @@ LineRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3bfa2f095c911d649bf4cb92a55ac974, type: 2}
+  - {fileID: 2100000, guid: 7627e8f4fd76a084ba1d52890c26f14a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
