@@ -19,7 +19,7 @@ public class PlayerStats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		maxHp = 1.0f;
+		maxHp = 20.0f;
 		hp = maxHp;
 		dead = false;
 

@@ -34,6 +34,7 @@ GameObject:
   - 232: {fileID: 23237002}
   - 82: {fileID: 8225816}
   - 81: {fileID: 8169052}
+  - 114: {fileID: 11437440}
   m_Layer: 11
   m_Name: p1
   m_TagString: Player
@@ -304,6 +305,17 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!114 &11437440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37bb01f04b607bf499cd83b775f8d2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11446526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -332,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  projectileSpeed: 0
+  projectileSpeed: 20
   hookSpeed: 0
   hpRatio: 0
   hp: 0
@@ -355,7 +367,7 @@ MonoBehaviour:
   hook: {fileID: 178068, guid: 4fa5269c050775747865f7d559049bc2, type: 2}
   dashCoolDown: 3
   isHookOn: 0
-  shootCoolDown: 1.5
+  shootCoolDown: 1
   shield: {fileID: 111370, guid: 0b371cea6078b874c958dba0c0655709, type: 2}
   shieldCoolDown: 5
   hookFlyingTime: 2

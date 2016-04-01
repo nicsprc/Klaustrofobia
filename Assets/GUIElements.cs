@@ -93,7 +93,7 @@ public class GUIElements : MonoBehaviour {
 			Rect offensiveSkills = new Rect(10f,30f, (Screen.width*(3f/5f) - 20),skillsWindow.height*(1f/2f)-30f);
 			offensiveSkills.position = new Vector2(skillsWindow.xMin+offensiveSkills.xMin,skillsWindow.yMin+offensiveSkills.yMin);
 
-			GUI.Box(offensiveSkills,"Offensive Skills. "+playerSkills.offensiveSkillPointSpent+" points spents. "+playerSkills.offensiveSkillPointCount+" skill points availables.");
+			GUI.Box(offensiveSkills,"Offensive Skills. "+playerSkills.offensiveSkillPointSpent+" points spent. "+playerSkills.offensiveSkillPointCount+" skill points availables.");
 
 			float dx = offensiveSkills.width*(1f/9f);
 			//Damage Box
@@ -128,7 +128,7 @@ public class GUIElements : MonoBehaviour {
 				if(playerSkills.offensiveSkillPointCount>0){
 					playerSkills.offensiveSkillPointCount--;
 					playerSkills.offensiveSkillPointSpent++;
-					playerStats.damage += 1;
+					playerStats.damage += 5;
 					dmgPoints++;
 				}
 			}
@@ -138,7 +138,7 @@ public class GUIElements : MonoBehaviour {
 					if(playerSkills.offensiveSkillPointCount>0){
 						playerSkills.offensiveSkillPointCount--;
 						playerSkills.offensiveSkillPointSpent++;
-						playerStats.damage += 1;
+						playerStats.damage += 5;
 						dmgPoints++;
 					}
 				}
@@ -157,7 +157,7 @@ public class GUIElements : MonoBehaviour {
 					if(playerSkills.offensiveSkillPointSpent>0){
 						playerSkills.offensiveSkillPointCount++;
 						playerSkills.offensiveSkillPointSpent--;
-						playerStats.damage -= 1;
+						playerStats.damage -= 5;
 						dmgPoints--;
 					}
 				}
@@ -169,7 +169,7 @@ public class GUIElements : MonoBehaviour {
 						if(playerSkills.offensiveSkillPointSpent>0){
 							playerSkills.offensiveSkillPointCount++;
 							playerSkills.offensiveSkillPointSpent--;
-							playerStats.damage -= 1;
+							playerStats.damage -= 5;
 							dmgPoints--;
 						}
 					}
@@ -200,7 +200,7 @@ public class GUIElements : MonoBehaviour {
 			//Min proj speed
 			Rect projSpeedMin = new Rect(0f,bulSpeed.height*(9f/90f),ddx,ddy);
 			projSpeedMin.position = new Vector2(projSpeedMax.xMin+projSpeedMin.xMin,projSpeedMax.yMax+projSpeedMin.yMin);
-			GUI.Box(projSpeedMin,"0");
+			GUI.Box(projSpeedMin,"20");
 			
 			//Increase proj speed button
 			Rect plusProjSpeed = new Rect(dd0x,bulSpeed.height*(18f/120f),ddx,ddy2);
@@ -238,7 +238,7 @@ public class GUIElements : MonoBehaviour {
 			Rect minusProjSpeed = new Rect(0,bulSpeed.width*(9f/120f),ddx,ddy2);
 			minusProjSpeed.position = new Vector2(playerProjSpeed.xMin+minusProjSpeed.xMin,playerProjSpeed.yMax+minusProjSpeed.yMin);
 			if(GUI.Button(minusProjSpeed,downRed)){
-				if(playerStats.projectileSpeed>0){
+				if(playerStats.projectileSpeed>20){
 					if(playerSkills.offensiveSkillPointSpent>0){
 						playerSkills.offensiveSkillPointCount++;
 						playerSkills.offensiveSkillPointSpent--;
@@ -250,7 +250,7 @@ public class GUIElements : MonoBehaviour {
 
 			if(bulSpeed.Contains(Event.current.mousePosition)){
 				if(Input.GetAxis("Mouse ScrollWheel")<0){
-					if(playerStats.projectileSpeed>0){
+					if(playerStats.projectileSpeed>20){
 						if(playerSkills.offensiveSkillPointSpent>0){
 							playerSkills.offensiveSkillPointCount++;
 							playerSkills.offensiveSkillPointSpent--;
@@ -280,18 +280,18 @@ public class GUIElements : MonoBehaviour {
 			//Max shot cd
 			Rect shotCDMax = new Rect(dd0x,shotCD.height*(18f/90f),ddx,ddy);
 			shotCDMax.position = new Vector2(shotCD.xMin+shotCDMax.xMin,shotCD.yMin+shotCDMax.yMin);
-			GUI.Box(shotCDMax,"1.5");
+			GUI.Box(shotCDMax,"1");
 			
 			//Min shot CD
 			Rect shotCDMin = new Rect(0f,shotCD.height*(9f/90f),ddx,ddy);
 			shotCDMin.position = new Vector2(shotCDMax.xMin+shotCDMin.xMin,shotCDMax.yMax+shotCDMin.yMin);
-			GUI.Box(shotCDMin,"0.3");
+			GUI.Box(shotCDMin,"0.2");
 			
 			//Increase shot CD button
 			Rect plusShotCD = new Rect(dd0x,shotCD.height*(18f/120f),ddx,ddy2);
 			plusShotCD.position = new Vector2(shotCDMax.xMax+plusShotCD.xMin,shotCD.yMin+plusShotCD.yMin);
 			if(GUI.Button(plusShotCD,downGreen)){
-				if(playerSkills.shootCoolDown>0.35f){
+				if(playerSkills.shootCoolDown>0.25f){
 					if(playerSkills.offensiveSkillPointCount>0){
 						playerSkills.offensiveSkillPointCount--;
 						playerSkills.offensiveSkillPointSpent++;
@@ -303,7 +303,7 @@ public class GUIElements : MonoBehaviour {
 
 			if(shotCD.Contains(Event.current.mousePosition)){
 				if(Input.GetAxis("Mouse ScrollWheel")>0){
-					if(playerSkills.shootCoolDown>0.35f){
+					if(playerSkills.shootCoolDown>0.25f){
 						if(playerSkills.offensiveSkillPointCount>0){
 							playerSkills.offensiveSkillPointCount--;
 							playerSkills.offensiveSkillPointSpent++;
@@ -323,7 +323,7 @@ public class GUIElements : MonoBehaviour {
 			Rect minusShotCD = new Rect(0,shotCD.width*(9f/120f),ddx,ddy2);
 			minusShotCD.position = new Vector2(playerShotCD.xMin+minusShotCD.xMin,playerShotCD.yMax+minusShotCD.yMin);
 			if(GUI.Button(minusShotCD,upRed)){
-				if(playerSkills.shootCoolDown<1.5f){
+				if(playerSkills.shootCoolDown<1f){
 					if(playerSkills.offensiveSkillPointSpent>0){
 						playerSkills.offensiveSkillPointCount++;
 						playerSkills.offensiveSkillPointSpent--;
@@ -335,7 +335,7 @@ public class GUIElements : MonoBehaviour {
 
 			if(shotCD.Contains(Event.current.mousePosition)){
 				if(Input.GetAxis("Mouse ScrollWheel")<0){
-					if(playerSkills.shootCoolDown<1.5f){
+					if(playerSkills.shootCoolDown<1f){
 						if(playerSkills.offensiveSkillPointSpent>0){
 							playerSkills.offensiveSkillPointCount++;
 							playerSkills.offensiveSkillPointSpent--;
@@ -370,13 +370,13 @@ public class GUIElements : MonoBehaviour {
 			//Min charge CD
 			Rect chargeCDMin = new Rect(0f,chargeCD.height*(9f/90f),ddx,ddy);
 			chargeCDMin.position = new Vector2(chargeCDMax.xMin+chargeCDMin.xMin,chargeCDMax.yMax+chargeCDMin.yMin);
-			GUI.Box(chargeCDMin,"0.2");
+			GUI.Box(chargeCDMin,"1");
 			
 			//Increase charge CD button
 			Rect plusChargeCD = new Rect(dd0x,chargeCD.height*(18f/120f),ddx,ddy2);
 			plusChargeCD.position = new Vector2(chargeCDMax.xMax+plusChargeCD.xMin,chargeCD.yMin+plusChargeCD.yMin);
 			if(GUI.Button(plusChargeCD,downGreen)){
-				if(playerSkills.timeCharging>0.25f){
+				if(playerSkills.timeCharging>1.05f){
 					if(playerSkills.offensiveSkillPointCount>0){
 						playerSkills.offensiveSkillPointCount--;
 						playerSkills.offensiveSkillPointSpent++;
@@ -388,7 +388,7 @@ public class GUIElements : MonoBehaviour {
 
 			if(chargeCD.Contains(Event.current.mousePosition)){
 				if(Input.GetAxis("Mouse ScrollWheel")>0){
-					if(playerSkills.timeCharging>0.25f){
+					if(playerSkills.timeCharging>1.05f){
 						if(playerSkills.offensiveSkillPointCount>0){
 							playerSkills.offensiveSkillPointCount--;
 							playerSkills.offensiveSkillPointSpent++;
@@ -481,7 +481,7 @@ public class GUIElements : MonoBehaviour {
 			//Min hp
 			Rect hpMin = new Rect(0f,hp.height*(9f/90f),ddx,ddy);
 			hpMin.position = new Vector2(hpMax.xMin+hpMin.xMin,hpMax.yMax+hpMin.yMin);
-			GUI.Box(hpMin,"1");
+			GUI.Box(hpMin,"20");
 			
 			//Increase hp button
 			Rect plusHp = new Rect(dd0x,hp.height*(18f/120f),ddx,ddy2);
@@ -566,7 +566,7 @@ public class GUIElements : MonoBehaviour {
 			//Max mov speed
 			Rect movSpeedMax = new Rect(dd0x,movSpeed.height*(18f/90f),ddx,ddy);
 			movSpeedMax.position = new Vector2(movSpeed.xMin+movSpeedMax.xMin,movSpeed.yMin+movSpeedMax.yMin);
-			GUI.Box(movSpeedMax,"15");
+			GUI.Box(movSpeedMax,"10");
 			
 			//Min mov speed
 			Rect movSpeedMin = new Rect(0f,movSpeed.height*(9f/90f),ddx,ddy);
@@ -577,7 +577,7 @@ public class GUIElements : MonoBehaviour {
 			Rect plusMovSpeed = new Rect(dd0x,movSpeed.height*(18f/120f),ddx,ddy2);
 			plusMovSpeed.position = new Vector2(movSpeedMax.xMax+plusMovSpeed.xMin,movSpeed.yMin+plusMovSpeed.yMin);
 			if(GUI.Button(plusMovSpeed,upGreen)){
-				if(playerMovement.speed<15){
+				if(playerMovement.speed<10){
 					if(playerSkills.utilitySkillPointCount>0){
 						playerSkills.utilitySkillPointCount--;
 						playerSkills.utilitySkillPointSpent++;
@@ -589,7 +589,7 @@ public class GUIElements : MonoBehaviour {
 
 			if(movSpeed.Contains(Event.current.mousePosition)){
 				if(Input.GetAxis("Mouse ScrollWheel")>0){
-					if(playerMovement.speed<15){
+					if(playerMovement.speed<10){
 						if(playerSkills.utilitySkillPointCount>0){
 							playerSkills.utilitySkillPointCount--;
 							playerSkills.utilitySkillPointSpent++;
@@ -656,7 +656,7 @@ public class GUIElements : MonoBehaviour {
 			//Min hook speed
 			Rect hookSpeedMin = new Rect(0f,hookSpeed.height*(9f/90f),ddx,ddy);
 			hookSpeedMin.position = new Vector2(hookSpeedMax.xMin+hookSpeedMin.xMin,hookSpeedMax.yMax+hookSpeedMin.yMin);
-			GUI.Box(hookSpeedMin,"0");
+			GUI.Box(hookSpeedMin,"10");
 			
 			//Increase hook speed button
 			Rect plusHookSpeed = new Rect(dd0x,hookSpeed.height*(18f/120f),ddx,ddy2);
@@ -694,7 +694,7 @@ public class GUIElements : MonoBehaviour {
 			Rect minusHookSpeed = new Rect(0,hookSpeed.width*(9f/120f),ddx,ddy2);
 			minusHookSpeed.position = new Vector2(playerHookSpeed.xMin+minusHookSpeed.xMin,playerHookSpeed.yMax+minusHookSpeed.yMin);
 			if(GUI.Button(minusHookSpeed,downRed)){
-				if(playerStats.hookSpeed>0){
+				if(playerStats.hookSpeed>10){
 					if(playerSkills.utilitySkillPointSpent>0){
 						playerSkills.utilitySkillPointCount++;
 						playerSkills.utilitySkillPointSpent--;
@@ -706,7 +706,7 @@ public class GUIElements : MonoBehaviour {
 
 			if(hookSpeed.Contains(Event.current.mousePosition)){
 				if(Input.GetAxis("Mouse ScrollWheel")<0){
-					if(playerStats.hookSpeed>0){
+					if(playerStats.hookSpeed>10){
 						if(playerSkills.utilitySkillPointSpent>0){
 							playerSkills.utilitySkillPointCount++;
 							playerSkills.utilitySkillPointSpent--;
@@ -738,7 +738,7 @@ public class GUIElements : MonoBehaviour {
 			//Max jump force
 			Rect jumpForceMax = new Rect(dd0x,jumpForce.height*(18f/90f),ddx,ddy);
 			jumpForceMax.position = new Vector2(jumpForce.xMin+jumpForceMax.xMin,jumpForce.yMin+jumpForceMax.yMin);
-			GUI.Box(jumpForceMax,"25");
+			GUI.Box(jumpForceMax,"20");
 			
 			//Min jump Force
 			Rect jumpForceMin = new Rect(0f,jumpForce.height*(9f/90f),ddx,ddy);
@@ -749,7 +749,7 @@ public class GUIElements : MonoBehaviour {
 			Rect plusJumpForce = new Rect(dd0x,jumpForce.height*(18f/120f),ddx,ddy2);
 			plusJumpForce.position = new Vector2(jumpForceMax.xMax+plusJumpForce.xMin,jumpForce.yMin+plusJumpForce.yMin);
 			if(GUI.Button(plusJumpForce,upGreen)){
-				if(playerMovement.jump<25){
+				if(playerMovement.jump<20){
 					if(playerSkills.utilitySkillPointCount>0){
 						playerSkills.utilitySkillPointCount--;
 						playerSkills.utilitySkillPointSpent++;
@@ -761,7 +761,7 @@ public class GUIElements : MonoBehaviour {
 
 			if(jumpForce.Contains(Event.current.mousePosition)){
 				if(Input.GetAxis("Mouse ScrollWheel")>0){
-					if(playerMovement.jump<25){
+					if(playerMovement.jump<20){
 						if(playerSkills.utilitySkillPointCount>0){
 							playerSkills.utilitySkillPointCount--;
 							playerSkills.utilitySkillPointSpent++;
