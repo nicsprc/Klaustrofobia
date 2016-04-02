@@ -20,9 +20,10 @@ public class EnemyStats : MonoBehaviour {
 		animator = GetComponent<Animator> ();
 		//damage += Mathf.CeilToInt (6f * Random.value);
 
+        //layer 10 = PlayerAmmo
 		if (this.gameObject.layer == 10) {
 			damage += GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().damage;
-		}
+		}        
 	}
 
 	void Update(){
@@ -64,6 +65,7 @@ public class EnemyStats : MonoBehaviour {
 		if (enemy.layer == 10) {
 			if(!invencible){
 				this.takeDamage(enemy.GetComponent<EnemyStats>().getDamage());
+                Debug.Log("The enemy took "+enemy.GetComponent<EnemyStats>().getDamage()+" of damage");
 			}
 		}
 	}

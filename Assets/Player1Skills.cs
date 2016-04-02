@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player1Skills : MonoBehaviour {
-	
+public class Player1Skills : MonoBehaviour {    
+
 	private AudioSource audioSou;
 
 	public GameObject bullet;
@@ -52,7 +52,7 @@ public class Player1Skills : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		audioSou = GetComponent<AudioSource> ();
-
+        
 		timer = 0.0f;
 		dashTimer = 0.0f;
 		weapon = GameObject.Find ("p1/Weapon");
@@ -83,10 +83,10 @@ public class Player1Skills : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () {        
 		//Shoot
 		if (canShoot) {
-			if (Input.GetMouseButtonDown (0) || Input.GetMouseButtonDown (1) || Input.GetMouseButton(1)) {
+			if (Input.GetMouseButtonDown (0) || Input.GetMouseButtonDown (1) || Input.GetMouseButton(1)) {                
 				Instantiate (bullet, transform.position, transform.rotation);
 				canShoot = false;
 				countShootTime = true;

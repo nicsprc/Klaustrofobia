@@ -30,12 +30,7 @@ public class RandomHookPlatforms : MonoBehaviour {
             finalPos.y = initialPos.y - ry;
 
             plat = (GameObject)Instantiate(hookPlatform, finalPos, transform.rotation);
-
             plat.transform.parent = thisPlatform.transform;
-
-            Debug.Log(finalPos.x + "/" + finalPos.y);
-        }
-        Debug.Log(initialPos.x + "/" + initialPos.y);
-        Debug.Log(spaceRange.x+"/"+spaceRange.y);
+        }        
     }		
 }
